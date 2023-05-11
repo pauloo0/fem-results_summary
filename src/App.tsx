@@ -1,20 +1,27 @@
 function App() {
   return (
-    <div className='h-screen w-screen flex items-center justify-center bg-zinc-100'>
-      <div className='flex flex-col sm:flex-row rounded-lg shadow-2xl'>
-        <div id='score' className='bg-purple-500 py-12 px-8'>
-          <h2>Your result</h2>
-          <div id='circle'>
-            g<h1>76</h1>
-            <p>of 100</p>
+    <div className='h-screen w-screen flex items-center justify-center bg-white font-hanken-grotesk text-lg box-border'>
+      <div className='max-w-4xl flex flex-col sm:flex-row rounded-3xl shadow-2xl bg-white'>
+        <div
+          id='score'
+          className='w-1/2 rounded-3xl bg-gradient-to-b from-light-slate-blue to-light-royal-blue py-12 px-10 flex flex-col items-center justify-between text-center'
+        >
+          <h2 className='text-light-lavander text-2xl'>Your Result</h2>
+          <div
+            id='circle'
+            className='w-48 h-48 bg-gradient-to-b from-violet-blue to-persian-blue rounded-full flex flex-col items-center justify-center'
+          >
+            <h1 className='text-6xl text-white font-extrabold'>76</h1>
+            <p className='text-light-lavander text-sm mt-2'>of 100</p>
           </div>
-          <h2>Great</h2>
-          <p>
+          <h2 className='text-3xl text-white font-bold'>Great</h2>
+          <p className='text-lg text-light-lavander font-medium'>
             You scored higher than 65% of the people who haven taken these
             tests.
           </p>
         </div>
-        <div id='summary' className='py-12 px-8'>
+
+        <div id='summary' className='py-12 px-10'>
           <h2>Summary</h2>
           <div id='reaction'>
             <span>Icon</span>
